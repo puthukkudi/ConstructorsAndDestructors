@@ -144,10 +144,13 @@ public:
 
 class BaseDemo4
 {
+protected : 
+	int mX, mY;
 public:
 	BaseDemo4()
 	{
-		std::cout << "DemoBase4  default constructor is called" << std::endl;
+		std::cout << mX <<" : "<<mY << std::endl; // prints garbage value as  data member mX and mY is not initiallized.
+		std::cout << "DemoBase4  default constructor is called" << std::endl;		
 	}
 
 	BaseDemo4(int x)
